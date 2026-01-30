@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import "./App.css";
 import Navbar from "./components/navbar/navbar";
 import Fondo from "./ui-components/Fondo";

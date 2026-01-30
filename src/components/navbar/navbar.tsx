@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ContactButton from "../../ui-components/ContactButton";
 import "./navbar.css";
 type Props = {};

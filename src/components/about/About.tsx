@@ -1,4 +1,3 @@
-import React from "react";
 import "./About.css";
 import AboutCard from "../../ui-components/AboutCard";
 import VerMas from "../../ui-components/VerMas";
@@ -30,21 +29,7 @@ const About = () => {
             pointerEvents: "none",
           }}
         >
-          <LightRays
-            raysOrigin="top-center"
-            raysColor="#870091"
-            raysSpeed={1}
-            lightSpread={0.5}
-            rayLength={3}
-            followMouse={true}
-            mouseInfluence={0.1}
-            noiseAmount={0}
-            distortion={0}
-            className="custom-rays"
-            pulsating={false}
-            fadeDistance={1}
-            saturation={1}
-          />
+          <LightRays className="custom-rays" />
         </div>
         <div className="about-cards">
           <div className="about-cards-text">

@@ -1,4 +1,3 @@
-import React from "react";
 import "./inicio.css";
 import DarkVeil from "../../ui-components/Fondo-inicio/DarkVeil";
 import GradientText from "../../ui-components/Gradient-text/GradientText";
@@ -34,9 +33,7 @@ export default function inicio({}: Props) {
               showCursor
               cursorCharacter="_"
               deletingSpeed={50}
-              variableSpeedEnabled={false}
-              variableSpeedMin={60}
-              variableSpeedMax={120}
+              variableSpeed={{ min: 60, max: 120 }}
               cursorBlinkDuration={0.5}
             />
 
