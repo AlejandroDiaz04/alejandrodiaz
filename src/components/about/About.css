@@ -34,6 +34,41 @@
   box-sizing: border-box;
   margin-bottom: 32px;
 }
+.about-chip {
+  width: 30%;
+  background: #0d1117;
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: #dcdcdc;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-card-text-1 h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2.5rem;
+  color: #dcdcdc;
+  margin-bottom: -20px;
+}
+
+.about-card-text-2 h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2.5rem;
+  color: #dcdcdc;
+  gap: 8px;
+}
+
+.about-cards-text p {
+  color: beige;
+}
 
 .about-cards-container {
   width: 50%;
@@ -166,20 +201,68 @@
 .botones-contenedor {
   margin-top: 20px;
 }
+@media (max-width: 1400px) {
+  .about-cards-container {
+    width: 70%;
+  }
+}
+@media (max-width: 1110px) {
+  .about-chip {
+    width: 70%;
+  }
+  .about-cards-container {
+    width: 80%;
+  }
+}
 
 @media (max-width: 900px) {
   .about-section {
     padding: 20px 5px;
   }
-  .about-cards-container {
-    max-width: 98vw;
-    margin-right: 70px;
+
+  .about-cards {
+    flex-direction: column;
+    width: 100%;
   }
+
+  .about-cards-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .about-chip {
+    width: 30%;
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .about-card-text-1 h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-card-text-2 h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-cards-text p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .about-cards-container {
+    width: 100%;
+    max-width: 98vw;
+    margin-top: 20px;
+  }
+
   .text-contenedor {
     flex-direction: column;
     max-width: 98vw;
     padding: 20px 5px;
   }
+
   .text-contenedor-izquierdo,
   .text-contenedor-derecho {
     max-width: 100%;

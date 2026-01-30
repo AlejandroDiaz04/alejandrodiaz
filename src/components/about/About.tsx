@@ -3,6 +3,8 @@ import "./About.css";
 import AboutCard from "../../ui-components/AboutCard";
 import VerMas from "../../ui-components/VerMas";
 import LightRays from "../../ui-components/Lightrays/Particles";
+import TerminalCard from "../../ui-components/TerminalCard";
+import GradientText from "../../ui-components/Gradient-text/GradientText";
 
 function downloadCV() {
   const link = document.createElement("a");
@@ -44,8 +46,44 @@ const About = () => {
             saturation={1}
           />
         </div>
-        <h1 style={{ position: "relative", zIndex: 1 }}>About Me</h1>
         <div className="about-cards">
+          <div className="about-cards-text">
+            <div className="about-chip">
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="25" cy="25" r="25" fill="#2D52E8" />
+              </svg>
+              Welcome to my portfolio
+            </div>
+            <div className="about-card-text-1">
+              <h1>Hello</h1>
+            </div>
+            <div className="about-card-text-2">
+              <h1>
+                I'm
+                <GradientText
+                  colors={["#27ffac", "#9ff9ff", "#9373fa"]}
+                  animationSpeed={3}
+                  showBorder={false}
+                >
+                  Alejandro Díaz
+                </GradientText>
+              </h1>
+            </div>
+
+            <div className="terminal-card">
+              <TerminalCard />
+            </div>
+            <p>
+              Programador Frontend | Backend | Apacionado por crear experiencias
+              digitales únicas.
+            </p>
+          </div>
           <div className="about-cards-container">
             <AboutCard />
           </div>
