@@ -1,0 +1,286 @@
+.footer {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+  color: #dcdcdc;
+  padding: 60px 40px 30px;
+  margin-top: 80px;
+  border-top: 1px solid #30363d;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #58a6ff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Links de navegación */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #dcdcdc;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: #58a6ff;
+  padding-left: 8px;
+}
+
+/* Redes sociales */
+.social-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: rgba(88, 166, 255, 0.1);
+  border: 2px solid #58a6ff;
+  border-radius: 50%;
+  color: #58a6ff;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.social-links a svg {
+  width: 20px;
+  height: 20px;
+  fill: #58a6ff;
+  transition: fill 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #58a6ff;
+  color: #0d1117;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(88, 166, 255, 0.3);
+}
+
+.social-links a:hover svg {
+  fill: #0d1117;
+}
+
+/* Información de contacto */
+.contact-info {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contact-info .label {
+  color: #58a6ff;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-top: 1px solid #30363d;
+  text-align: center;
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+  .footer {
+    padding: 50px 30px 25px;
+    margin-top: 60px;
+  }
+
+  .footer-content {
+    gap: 30px;
+  }
+
+  .footer-section h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 40px 20px 20px;
+    margin-top: 50px;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .footer-section h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+
+  .social-links {
+    gap: 15px;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .social-links a svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .contact-info {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 30px 15px 15px;
+    margin-top: 40px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section h3 {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links a {
+    font-size: 0.85rem;
+  }
+
+  .footer-links a:hover {
+    padding-left: 0;
+  }
+
+  .social-links {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .social-links a {
+    width: 38px;
+    height: 38px;
+    border-width: 1.5px;
+  }
+
+  .social-links a svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .contact-info {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom {
+    padding-top: 20px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    padding: 20px 10px 10px;
+    margin-top: 30px;
+  }
+
+  .footer-content {
+    gap: 15px;
+  }
+
+  .footer-section h3 {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+
+  .footer-links a {
+    font-size: 0.8rem;
+  }
+
+  .social-links {
+    gap: 10px;
+  }
+
+  .social-links a {
+    width: 35px;
+    height: 35px;
+    border-width: 1px;
+  }
+
+  .social-links a svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .contact-info {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    word-break: break-word;
+  }
+
+  .contact-info .label {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .footer-bottom {
+    padding-top: 15px;
+    font-size: 0.75rem;
+  }
+}

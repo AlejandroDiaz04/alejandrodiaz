@@ -5,6 +5,7 @@ import Inicio from "./components/inicio/inicio";
 import About from "./components/about/About";
 import Titles from "./components/titles/Titles";
 import Proyectos from "./components/proyectos/Proyectos";
+import Footers from "./components/footers/Footers";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Titles />
       <Proyectos />
+      <Footers />
     </>
   );
 }

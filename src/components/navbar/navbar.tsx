@@ -15,7 +15,7 @@ export default function ({}: Props) {
       <nav className="navbar">
         <div className="navbar-logo">
           <div className="imagen-contenedor">
-            <img src="/img/perfil.jpg" alt="" />
+            <img src="img/perfil.jpg" alt="" />
           </div>
           <div className="texto-contenedor">
             <p>

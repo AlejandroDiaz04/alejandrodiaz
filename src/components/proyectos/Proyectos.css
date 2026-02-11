@@ -1,19 +1,11 @@
 .proyectos-contenedor {
   font-family: "Montserrat", sans-serif;
-  width: 100%;
   height: auto;
   background: rgb(255, 255, 255);
-}
-.proyectos-seccion {
-  width: 100%;
-  height: auto;
-}
-.proyectos-text {
-  width: 30%;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  padding: 10px 0px 10px 20px;
-  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .proyectos-text h1 {
@@ -22,7 +14,6 @@
 }
 
 .proyectos-lista {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -50,4 +41,95 @@
 .proyecto-item img:hover {
   transform: scale(1.05);
   box-shadow: 8px 6px 19px -6px rgba(23, 23, 24, 0.58);
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+  .proyectos-text {
+    width: 35%;
+  }
+
+  .proyectos-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .proyectos-lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .proyecto-item {
+    height: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .proyectos-seccion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .proyectos-text h1 {
+    font-size: 2rem;
+  }
+
+  .proyectos-lista {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    padding: 0 15px 20px 20px;
+  }
+
+  .proyecto-item {
+    height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .proyectos-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .proyectos-lista {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 0 10px 15px 10px;
+  }
+
+  .proyecto-item {
+    height: 250px;
+    border-radius: 10px;
+  }
+
+  .proyecto-item img {
+    width: 90%;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .proyectos-text h1 {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+
+  .proyectos-lista {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 8px 10px 8px;
+  }
+
+  .proyecto-item {
+    height: 200px;
+    border-radius: 8px;
+  }
+
+  .proyecto-item img {
+    width: 95%;
+    border-radius: 6px;
+    border: 0.5px solid #ccc;
+  }
+
+  .proyecto-item img:hover {
+    transform: scale(1.03);
+  }
 }
