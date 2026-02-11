@@ -1,0 +1,72 @@
+.shuffle-parent {
+  display: inline-block;
+  white-space: normal;
+  word-wrap: break-word;
+  will-change: transform;
+  line-height: 1;
+  font-size: 4rem;
+  font-family: "Press Start 2P", sans-serif;
+  text-transform: uppercase;
+  visibility: hidden;
+}
+
+.shuffle-parent.is-ready {
+  visibility: visible;
+}
+
+.shuffle-char-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.shuffle-char-wrapper > span {
+  display: inline-flex;
+  will-change: transform;
+}
+
+.shuffle-char {
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+  .shuffle-parent {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .shuffle-parent {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .shuffle-parent {
+    font-size: 1.8rem;
+    word-wrap: break-word;
+  }
+
+  .shuffle-char-wrapper {
+    margin: 0 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  .shuffle-parent {
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+  }
+
+  .shuffle-char-wrapper {
+    margin: 0 1px;
+  }
+
+  .shuffle-char {
+    letter-spacing: -0.05em;
+  }
+}

@@ -337,12 +337,43 @@ const StyledWrapper = styled.div`
       padding: 1.1em 0 1.1em 2.4em;
       font-size: 1em;
       border-radius: 8px;
-      margin: 1em 0.1em;
+      margin: 1em auto;
+      max-width: 95%;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-x: auto;
     }
     .icon {
       width: 18px;
       height: 18px;
       left: 104%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .whoami-code {
+      padding: 0.8em 0 0.8em 1.8em;
+      font-size: 0.85em;
+      border-radius: 6px;
+      margin: 0.8em auto;
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .whoami-code span.code-line::before {
+      left: -2.4em;
+      width: 1.8em;
+      font-size: 0.85em;
+    }
+
+    .icon {
+      width: 16px;
+      height: 16px;
+      margin-left: 0.2em;
+      margin-right: 0.1em;
     }
   }
   .keyword {
